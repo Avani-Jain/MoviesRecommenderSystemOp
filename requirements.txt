@@ -1,0 +1,11 @@
+streamlit==1.31.0
+sklearn==0.0
+numpy==1.26.4
+pandas==2.2.0
+matplotlib==3.8.3
+nltk==3.8.1
+
+# pip install -r requirements.txt
+
+# local packages
+-e .

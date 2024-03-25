@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: src
+Version: 0.0.1
+Summary: A small example package for movies recommendation
+Author: AVANI JAIN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+
+Movies Recommender system
+<!-- we are using heruko for deployment -->
