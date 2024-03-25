@@ -37,25 +37,41 @@ selected_movie = st.selectbox(
 
 if st.button('Show Recommendation'):
     recommended_movie_names,recommended_movie_posters = recommend(selected_movie)
-    col1, col2, col3, col4, col5 = st.columns(5)
-    for i in range(1, 10):
-        column = "col" + str(i)
-        with column:
-            st.text(recommended_movie_names[i-1])
-        st.image(recommended_movie_posters[i-1])
-    # with col1:
-    #     st.text(recommended_movie_names[0])
-    #     st.image(recommended_movie_posters[0])
-    # with col2:
-    #     st.text(recommended_movie_names[1])
-    #     st.image(recommended_movie_posters[1])
-
-    # with col3:
-    #     st.text(recommended_movie_names[2])
-    #     st.image(recommended_movie_posters[2])
-    # with col4:
-    #     st.text(recommended_movie_names[3])
-    #     st.image(recommended_movie_posters[3])
-    # with col5:
-    #     st.text(recommended_movie_names[4])
-    #     st.image(recommended_movie_posters[4])
+    # row1 = st.columns(5)
+    # row2 = st.columns(5)
+    col11, col21, col31, col41, col51 = st.columns(5)
+    col12, col22, col32, col42, col52 = st.columns(5)
+    # for i in range(1, 10):
+    #     column = "col" + str(i)
+    #     with column:
+    #         st.text(recommended_movie_names[i-1])
+    with col11:
+        st.text(recommended_movie_names[0])
+        st.image(recommended_movie_posters[0])
+    with col21:
+        st.text(recommended_movie_names[1])
+        st.image(recommended_movie_posters[1])
+    with col31:
+        st.text(recommended_movie_names[2])
+        st.image(recommended_movie_posters[2])
+    with col41:
+        st.text(recommended_movie_names[3])
+        st.image(recommended_movie_posters[3])
+    with col51:
+        st.text(recommended_movie_names[4])
+        st.image(recommended_movie_posters[4])
+    with col12:
+        st.text(recommended_movie_names[0])
+        st.image(recommended_movie_posters[0])
+    with col22:
+        st.text(recommended_movie_names[1])
+        st.image(recommended_movie_posters[1])
+    with col32:
+        st.text(recommended_movie_names[2])
+        st.image(recommended_movie_posters[2])
+    with col42:
+        st.text(recommended_movie_names[3])
+        st.image(recommended_movie_posters[3])
+    with col52:
+        st.text(recommended_movie_names[4])
+        st.image(recommended_movie_posters[4])
